@@ -3,47 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network-IT</title>
+    <title>Diensten</title>
     <link href="./css/reset.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-  <!-- JavaScript: Bootstrap Bundle with Popper -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" defer></script>
-  <!-- eigen geschreven css voor jouw html-bestand -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
+  <header>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="Network-IT" width="220" height="60"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="diensten.html">Diensten</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="naam.html">Dashboard</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
-              <button class="btn btn-sm btn-outline-secondary" type="submit">Search</button>
-            </form>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/icons/logo.png" alt="Network-IT" width="205" height="50"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <button type="button" class="btn paars dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Diensten</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" aria-current="page" href="diensten.html">Alle diensten</a></li>
+                <li><a class="dropdown-item" href="naam.html">Apparaatstatusmonitoring</a></li>
+                <li><a class="dropdown-item" href="#">Netwerkverkeersanalyse</a></li>
+                <li><a class="dropdown-item" href="#">DNS-prestatieanalyse</a></li>
+                <li><a class="dropdown-item" href="#">Netwerkapparaatlocatie</a></li>
+                <li><a class="dropdown-item" href="#">Bandbreedtegebruikmonitoring</a></li>
+                <li><a class="dropdown-item" href="#">Netwerkdiagnostiek</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Zoeken" aria-label="Search">
+            <button class="btn btn-sm btn-outline-secondary" type="submit">Search</button>
+          </form>
         </div>
-      </nav>
+      </div>
+    </nav>
+
+    <div class="container mt-4 mb-3">
+      <h1 class="text-center m-3 mb-3">Diensten</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <main class="col-md-10">
+          <section class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3">
+              <div class="col-md-6 pt-3 mb-5">
+                  <div class="card ">
+                      <a class="dienst1" href="naam.html"><img src="./assets/images/apparaatstatus.png" class="card-img-top img-fluid" alt="Apparaatstatusmonitoring"></a>
+                      <div class="card-body">
+                        <p><a href="naam.html" class="text-decoration fs-6 fw-semibold blauw" style="font-family: 'Andale Mono', monospace;">Apparaatstatusmonitoring</a></p>
+                        <p class="card-text text-start" style="font-family: Verdana, sans-serif;">Blijf op de hoogte van de realtime status van je netwerkapparaten, inclusief bandbreedtegebruik en foutstatistieken.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6 pt-3 mb-5">
+                <div class="card">
+                    <a class="dienst2" href="#"><img src="./assets/images/netwerkverkeer.png" class="card-img-top img-fluid" alt="Netwerkverkeersanalyse"></a>
+                    <div class="card-body">
+                      <p><a href="#" class="text-decoration fs-6 fw-semibold blauw" style="font-family: 'Andale Mono', monospace;">Netwerkverkeersanalyse</a></p>
+                      <p class="card-text text-start" style="font-family: Verdana, sans-serif;">Analyseer het inkomende en uitgaande netwerkverkeer om verkeerspatronen en bron- en doeladressen te identificeren.
+                      </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-6 pt-3 mb-5">
+                <div class="card ">
+                    <a class="dienst3" href="#"><img src="./assets/images/dnsprestatie.png" class="card-img-top img-fluid" alt="DNS-prestatieanalyse"></a>
+                    <div class="card-body">
+                      <p><a href="#" class="text-decoration fs-6 fw-semibold blauw" style="font-family: 'Andale Mono', monospace;">DNS-prestatieanalyse</a></p>
+                      <p class="card-text text-start" style="font-family: Verdana, sans-serif;">Krijg gedetailleerde inzichten in DNS-querytijden om de betrouwbaarheid van je netwerk te verbeteren.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-6 pt-3 mb-5">
+                <div class="card ">
+                    <a class="dienst4" href="#"><img src="./assets/images/apparaatlocatie.png" class="card-img-top img-fluid" alt="Netwerkapparaatlocatie"></a>
+                    <div class="card-body">
+                      <p><a href="#" class="text-decoration fs-6 fw-semibold blauw" style="font-family: 'Andale Mono', monospace;">Netwerkapparaatlocatie</a></p>
+                      <p class="card-text text-start" style="font-family: Verdana, sans-serif;">Traceer de fysieke locatie van je netwerkapparaten voor betere assetmanagement en beveiliging.
+                      </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-6 pt-3 mb-5">
+                <div class="card ">
+                    <a class="dienst5" href="#"><img src="./assets/images/bandbreedte.png" class="card-img-top img-fluid" alt="Bandbreedtegebruikmonitoring"></a>
+                    <div class="card-body">
+                      <p><a href="#" class="text-decoration fs-6 fw-semibold blauw" style="font-family: 'Andale Mono', monospace;">Bandbreedtegebruikmonitoring</a></p>
+                      <p class="card-text text-start" style="font-family: Verdana, sans-serif;">Monitor het huidige bandbreedtegebruik en bekijk historische trends om de netwerkprestaties te optimaliseren.</p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-6 pt-3 mb-5">
+                <div class="card ">
+                    <a class="dienst6" href="#"><img src="./assets/images/netwdiagnostiek.png" class="card-img-top img-fluid" alt="Netwerkdiagnostiek"></a>
+                    <div class="card-body">
+                      <p><a href="#" class="text-decoration fs-6 fw-semibold blauw" style="font-family: 'Andale Mono', monospace;">Netwerkdiagnostiek</a></p>
+                      <p class="card-text text-start" style="font-family: Verdana, sans-serif;">Voer eenvoudig netwerkdiagnostische tests uit, zoals ping en traceroute, voor probleemoplossing en optimalisatie.</p>
+                    </div>
+                </div>
+              </div>
+          </section>
+      </main>
+      
+      <aside class="col-md-2 border-start ps-5">
+        <h2 class="text-uppercase fs-5 fw-semibold pt-3 blauw" style="text-decoration: underline;">Social media</h2>
+        <p>Mila Rynders <br>
+          E-mail: <a href="mailto:s154350@ap.be" class="custompaars" style="text-decoration: none;">Mila.rynders@student.ap.be</a>
+        </p>
+        <ul class="list-inline socials">
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/milarynders?igsh=MWI5OTVkcWl2MXl4Yw%3D%3D&utm_source=qr" target="_blank">
+            <i class="bi bi-instagram custompaars fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.youtube.com" target="_blank">
+            <i class="bi bi-youtube custompaars fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.facebook.com" target="_blank">
+            <i class="bi bi-facebook custompaars fs-3"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/mila-rynders-032a4a306" target="_blank">
+            <i class="bi bi-linkedin custompaars fs-3"></i>
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+  
+  <footer class="bg-light text-center text-lg-start pt-3">
+    <div class="container p-3 ">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center ">
+              <a class="navbar-brand" href="index.html"><img src="assets/icons/logo.png" alt="Network-IT" width="140" height="40"></a>
+                <ul class="list-inline pt-4">
+                    <li class="list-inline-item">
+                        <a href="index.html" class="customblauw">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="diensten.html" class="customblauw">Diensten</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="dashboard.html" class="customblauw">Dashboard</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="contact.html" class="customblauw">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <span class="custompaars" style="display: block; text-align: center;">&copy; NetworkIT</span>
+  </footer>
 </body>
 </html>
