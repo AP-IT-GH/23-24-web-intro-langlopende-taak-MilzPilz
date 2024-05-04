@@ -36,7 +36,7 @@
               </button>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="diensten.html">Alle diensten</a></li>
-                <li><a class="dropdown-item" href="naam.html">Apparaatstatusmonitoring</a></li>
+                <li><a class="dropdown-item" href="apparaatstatusmonitoring.html">Apparaatstatusmonitoring</a></li>
                 <li><a class="dropdown-item" href="#">Netwerkverkeersanalyse</a></li>
                 <li><a class="dropdown-item" href="#">DNS-prestatieanalyse</a></li>
                 <li><a class="dropdown-item" href="#">Netwerkapparaatlocatie</a></li>
@@ -58,12 +58,11 @@
         </div>
       </div>
     </nav>
-
-    <div class="container mt-4 mb-3">
-      <h1 class="text-center m-3 mb-3">Contact opnemen</h1>
-    </div>
   </header>
 
+  <div class="container mt-4 mb-3">
+    <h1 class="text-center m-3 mb-3">Contact opnemen</h1>
+  </div>
   <div class="container">
     <div class="row">
       <main class="col-md-10">
@@ -73,8 +72,8 @@
                       <h5 class="card-header fs-5">Contact met ons opnemen?</h5>
                       <div class="card-body">
                           <p class="card-text">Dat kan op verschillende manieren:</p>
-                          <ul style="list-style-type: disc;">
-                              <li>Per e-mail: Stuur ons een bericht naar <a href="mailto:s154350@ap.be" class="custompaars" style="text-decoration: none;">Mila.rynders@student.ap.be</a></li>
+                          <ul class="contactformuliertekst">
+                              <li>Per e-mail: Stuur ons een bericht naar <a href="mailto:s154350@ap.be" class="custompaars e-mail">Mila.rynders@student.ap.be</a></li>
                               <li>Telefonisch: Bel ons op +32 123 456 789.</li>
                               <li>Contactformulier: Vul het formulier hiernaast in.</li>
                               <li>Bezoek ons: Maak een afspraak en kom langs op <span class="custompaars"> <br>Ellermanstraat 33, 2060 Antwerpen</span></li>
@@ -83,7 +82,7 @@
                   </div>
               </div>
               <div class="col-md-6 mb-5">
-                  <form action="#" method="post" style="height: 100%;">
+                  <form action="#" method="post" class="form_height">
                       <fieldset class="row g-3 mb-3">
                           <legend class="text-uppercase fs-2 fw-semibold pt-3 jersey-15-regular">Contactformulier:</legend>
                           <div class="col-md-6">
@@ -104,8 +103,14 @@
                                   placeholder="+32 479 40 92 06">
                           </div>
                           <div class="col-md-12">
+                            <label for="contactperson" class="form-label">Wie wil je contacteren? <span class="required">*</span></label>
+                            <select id="contactperson" class="form-select">
+                              <option value="Website beheerder" selected>Website beheerder</option>
+                              <option value="Netwerk beheerder">Netwerk beheerder</option>
+                            </select>
+                          <div class="col-md-12">
                               <label for="message" class="form-label">Bericht: <span class="required">*</span></label>
-                              <textarea class="form-control" id="message" rows="8" required placeholder="Schrijf hier je boodschap..."></textarea>
+                              <textarea class="form-control" id="message" rows="7" required placeholder="Schrijf hier je boodschap..."></textarea>
                           </div>
                       </fieldset>
                       <div class="col-12 text-end">
@@ -117,10 +122,10 @@
       </main>
 
       <aside class="col-md-2 border-start ps-5">
-          <h2 class="text-uppercase fs-5 fw-semibold pt-3 blauw" style="text-decoration: underline;">Social media</h2>
-          <p>Mila Rynders <br>
-            E-mail: <a href="mailto:s154350@ap.be" class="custompaars" style="text-decoration: none;">Mila.rynders@student.ap.be</a>
-          </p>
+        <h2 class="text-uppercase onderlijning fs-5 fw-semibold pt-3 blauw">Social media</h2>
+        <p>Mila Rynders <br>
+          E-mail: <a href="mailto:s154350@ap.be" class="custompaars e-mail">Mila.rynders@student.ap.be</a>
+        </p>
           <ul class="list-inline socials">
             <li class="list-inline-item">
               <a href="https://www.instagram.com/milarynders?igsh=MWI5OTVkcWl2MXl4Yw%3D%3D&utm_source=qr" target="_blank">
@@ -169,7 +174,7 @@
               </div>
           </div>
       </div>
-      <span class="custompaars" style="display: block; text-align: center;">&copy; NetworkIT</span>
+      <span class="custompaars copyright">&copy; NetworkIT</span>
   </footer>
 </body>
 </html>

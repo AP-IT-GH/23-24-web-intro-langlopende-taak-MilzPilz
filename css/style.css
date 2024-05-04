@@ -54,6 +54,25 @@ html, body {
   color: #6A50A7;
 }
 
+.onderlijning {
+  font-family: 'Andale Mono', monospace;
+  text-decoration: underline;
+}
+
+.e-mail {
+  text-decoration: none;
+}
+
+.copyright {
+  display: block;
+  text-align: center;
+}
+
+.verdana {
+  font-family: Verdana, sans-serif;
+}
+
+
 .custompaars {
   color: #8B78FF;
 }
@@ -80,12 +99,20 @@ html, body {
   color: #8B78FF;
 }
 
+.contactformuliertekst {
+  list-style-type: disc;
+}
+
+.form_height {
+  height: 100%;
+}
+
 
 .card {
   width: 100%;
   height: auto;
   max-width: 400px;
-  min-height: 530px;
+  min-height: 540px;
 }
 
 .card-img-top {
