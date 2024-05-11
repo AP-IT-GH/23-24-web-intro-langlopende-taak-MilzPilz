@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apparaatstatusmonitoring</title>
     <link href="./css/reset.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" defer></script>
-  <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="./css/map.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="./js/map-script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
 </head>
 
 <body class="p-3 m-0 border-0 bd-example">
@@ -33,11 +41,11 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="diensten.html">Alle diensten</a></li>
                 <li><a class="dropdown-item" aria-current="page" href="apparaatstatusmonitoring.html">Apparaatstatusmonitoring</a></li>
-                <li><a class="dropdown-item" href="#">Netwerkverkeersanalyse</a></li>
-                <li><a class="dropdown-item" href="#">DNS-prestatieanalyse</a></li>
-                <li><a class="dropdown-item" href="#">Netwerkapparaatlocatie</a></li>
-                <li><a class="dropdown-item" href="#">Bandbreedtegebruikmonitoring</a></li>
-                <li><a class="dropdown-item" href="#">Netwerkdiagnostiek</a></li>
+                <li><a class="dropdown-item" href="netwerkverkeersanalyse.html">Netwerkverkeersanalyse</a></li>
+                <li><a class="dropdown-item" href="dns-prestatieanalyse.html">DNS-prestatieanalyse</a></li>
+                <li><a class="dropdown-item" href="netwerkapparaatlocatie.html">Netwerkapparaatlocatie</a></li>
+                <li><a class="dropdown-item" href="bandbreedtegebruikmonitoring.html">Bandbreedtegebruikmonitoring</a></li>
+                <li><a class="dropdown-item" href="netwerkdiagnostiek.html">Netwerkdiagnostiek</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -65,6 +73,7 @@
       <main class="col-md-10">
           <div class="row">
               <section class="col-md-6">
+                <p class="fs-5 jersey-15-regular">Apparaatstatusmonitoring is essentieel voor efficiënt beheer van technologische systemen. Het biedt real-time inzicht in apparaatstatussen, waardoor bedrijven proactief problemen kunnen identificeren, downtime kunnen minimaliseren en onderhoudsstrategieën kunnen optimaliseren. Kortom, het waarborgt operationele doelstellingen door het bewaken van de gezondheid van systemen.</p>
                   <figure>
                       <img src="./assets/images/apparaatstatus.png" alt="Apparaatstatusmonitoring" class="img-fluid" width="500">
                       <figcaption class="h5 small mt-2">Realtime monitoring van de status van netwerkapparaten <br>&copy; Canva AI</figcaption>
@@ -72,7 +81,7 @@
               </section>
               <section class="col-md-6">
                   <div class="tabel-container">
-                      <h4 class="text-start text-uppercase onderlijning fs-4 fw-medium pt-3">Monitor:</h4>
+                      <h4 class="text-start text-uppercase onderlijning fs-4 fw-medium pt-5">Monitor:</h4>
                       <table class="table table-bordered table-sm fs-table">
                           <caption class="fs-6 fw-lighter customgrijs">Refresh pagina om laatste gegevens te zien</caption>
                           <thead class="custom-color">
@@ -96,8 +105,8 @@
                           </tbody>
                       </table>
                   </div>
-                  <h3 class="fs-5">Voordelen:</h3>
-                  <ol class="list-group list-group-numbered mb-3">
+                  <h3 class="text-uppercase onderlijning fs-4 fw-medium pt-5">Voordelen:</h3>
+                  <ol class="list-group list-group-numbered mb-5">
                       <li class="list-group-item"><span class="custompaars">Directe detectie van problemen</span></li>
                       <li class="list-group-item"><span class="custompaars">Efficiëntieverbetering</span></li>
                       <li class="list-group-item"><span class="custompaars">Verhoogde beveiliging</span></li>
@@ -158,6 +167,7 @@
         </div>
     </div>
     <span class="custompaars copyright">&copy; NetworkIT</span>
+    <span class="custompaars copyright">Mila Rynders G_1SNB_H_D1</span>
   </footer>
 </body>
 </html>

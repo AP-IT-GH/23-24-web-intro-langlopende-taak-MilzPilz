@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Netwerkverkeersanalyse</title>
     <link href="./css/reset.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -41,7 +41,7 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="diensten.html">Alle diensten</a></li>
                 <li><a class="dropdown-item" href="apparaatstatusmonitoring.html">Apparaatstatusmonitoring</a></li>
-                <li><a class="dropdown-item" href="netwerkverkeersanalyse.html">Netwerkverkeersanalyse</a></li>
+                <li><a class="dropdown-item" aria-current="page" href="netwerkverkeersanalyse.html">Netwerkverkeersanalyse</a></li>
                 <li><a class="dropdown-item" href="dns-prestatieanalyse.html">DNS-prestatieanalyse</a></li>
                 <li><a class="dropdown-item" href="netwerkapparaatlocatie.html">Netwerkapparaatlocatie</a></li>
                 <li><a class="dropdown-item" href="bandbreedtegebruikmonitoring.html">Bandbreedtegebruikmonitoring</a></li>
@@ -49,7 +49,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="dashboard.html">Dashboard</a>
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -65,12 +65,54 @@
   </header>
 
   <div class="container mt-4 mb-3">
-    <h1 class="text-center m-3 mb-3">Dashboard</h1>
+    <h1 class="text-center fw-bold m-3 mb-3">Netwerkverkeersanalyse</h1>
+    <h2 class="text-center fs-4 m-3 mb-3">Inzicht in inkomend en uitgaand netwerkverkeer</h2>
   </div>
   <div class="container">
     <div class="row">
       <main class="col-md-10">
-          
+          <div class="row">
+              <section class="col-md-6">
+                <p class="fs-5 jersey-15-regular">Netwerkverkeersanalyse is een krachtig instrument voor het begrijpen van zowel inkomend als uitgaand verkeer binnen een netwerkinfrastructuur. Door het analyseren van datastromen kunnen organisaties niet alleen potentiële bedreigingen detecteren en snel reageren op beveiligingsincidenten, maar ook de algehele prestaties van het netwerk optimaliseren. Bovendien stelt het gedetailleerde inzicht in verkeerspatronen en -trends IT-teams in staat om proactief capaciteitsplanning te doen en de netwerkarchitectuur voortdurend te verbeteren. Met netwerkverkeersanalyse kunnen organisaties hun netwerk effectief beheren, de operationele efficiëntie verbeteren en de algehele veiligheid waarborgen.</p>
+                  <figure>
+                      <img src="./assets/images/netwerkverkeer.png" alt="Netwerkverkeersanalyse" class="img-fluid" width="500">
+                      <figcaption class="h5 small mt-2">Analyse van inkomend en uitgaand netwerkverkeer<br>&copy; Canva AI</figcaption>
+                  </figure>
+              </section>
+              <section class="col-md-6">
+                  <div class="tabel-container">
+                      <h4 class="text-start text-uppercase onderlijning fs-4 fw-medium pt-5">Monitor:</h4>
+                      <table class="table table-bordered table-sm fs-table">
+                          <caption class="fs-6 fw-lighter customgrijs">Refresh pagina om laatste gegevens te zien</caption>
+                          <thead class="custom-color">
+                              <tr>
+                                  <th scope="col" class="custom-color"></th>
+                                  <th scope="col" class="custom-color">Apparaat 1</th>
+                                  <th scope="col" class="custom-color">Apparaat 2</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <th scope="row">Inkomend verkeer</th>
+                                  <td>5.000 bytes</td>
+                                  <td>13.000 bytes</td>
+                              </tr>
+                              <tr>
+                                  <th scope="row">Uitgaand verkeer</th>
+                                  <td>27.000 bytes</td>
+                                  <td>59.000 bytes</td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                  <h3 class="text-uppercase onderlijning fs-4 fw-medium pt-5">Voordelen:</h3>
+                  <ol class="list-group list-group-numbered mb-5">
+                      <li class="list-group-item"><span class="custompaars">Beveiligingsdetectie en respons</span></li>
+                      <li class="list-group-item"><span class="custompaars">Optimalisatie van netwerkprestaties</span></li>
+                      <li class="list-group-item"><span class="custompaars">Naleving en rapportage</span></li>
+                  </ol>
+              </section>
+          </div>
       </main>
         
       <aside class="col-md-2 border-start ps-5">
@@ -101,31 +143,31 @@
       </aside>
     </div>
   </div>
-    
+  
   <footer class="bg-light text-center text-lg-start pt-3">
-      <div class="container p-3 ">
-          <div class="row justify-content-center">
-              <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center ">
-                <a class="navbar-brand" href="index.html"><img src="assets/icons/logo.png" alt="Network-IT" width="140" height="40"></a>
-                  <ul class="list-inline pt-4">
-                      <li class="list-inline-item">
-                          <a href="index.html" class="customblauw">Home</a>
-                      </li>
-                      <li class="list-inline-item">
-                          <a href="diensten.html" class="customblauw">Diensten</a>
-                      </li>
-                      <li class="list-inline-item">
-                          <a href="dashboard.html" class="customblauw">Dashboard</a>
-                      </li>
-                      <li class="list-inline-item">
-                          <a href="contact.html" class="customblauw">Contact</a>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-      <span class="custompaars copyright">&copy; NetworkIT</span>
-      <span class="custompaars copyright">Mila Rynders G_1SNB_H_D1</span>
+    <div class="container p-3 ">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0 text-center ">
+              <a class="navbar-brand" href="index.html"><img src="assets/icons/logo.png" alt="Network-IT" width="140" height="40"></a>
+                <ul class="list-inline pt-4">
+                    <li class="list-inline-item">
+                        <a href="index.html" class="customblauw">Home</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="diensten.html" class="customblauw">Diensten</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="dashboard.html" class="customblauw">Dashboard</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="contact.html" class="customblauw">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <span class="custompaars copyright">&copy; NetworkIT</span>
+    <span class="custompaars copyright">Mila Rynders G_1SNB_H_D1</span>
   </footer>
 </body>
 </html>

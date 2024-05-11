@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+  <link rel="stylesheet" href="./css/map.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="./js/map-script.js" defer></script>
   <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
 </head>
 
@@ -37,11 +41,11 @@
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="diensten.html">Alle diensten</a></li>
                 <li><a class="dropdown-item" href="apparaatstatusmonitoring.html">Apparaatstatusmonitoring</a></li>
-                <li><a class="dropdown-item" href="#">Netwerkverkeersanalyse</a></li>
-                <li><a class="dropdown-item" href="#">DNS-prestatieanalyse</a></li>
-                <li><a class="dropdown-item" href="#">Netwerkapparaatlocatie</a></li>
-                <li><a class="dropdown-item" href="#">Bandbreedtegebruikmonitoring</a></li>
-                <li><a class="dropdown-item" href="#">Netwerkdiagnostiek</a></li>
+                <li><a class="dropdown-item" href="netwerkverkeersanalyse.html">Netwerkverkeersanalyse</a></li>
+                <li><a class="dropdown-item" href="dns-prestatieanalyse.html">DNS-prestatieanalyse</a></li>
+                <li><a class="dropdown-item" href="netwerkapparaatlocatie.html">Netwerkapparaatlocatie</a></li>
+                <li><a class="dropdown-item" href="bandbreedtegebruikmonitoring.html">Bandbreedtegebruikmonitoring</a></li>
+                <li><a class="dropdown-item" href="netwerkdiagnostiek.html">Netwerkdiagnostiek</a></li>
               </ul>
             </li>
             <li class="nav-item">
@@ -118,6 +122,10 @@
                       </div>
                   </form>
               </div>
+              <section id="map" class="row">
+                <p class="fs-4 onderlijning">Waar je ons kan vinden:</p>
+                <div id="ITmap" class="col-12 mb-5"></div>
+              </section>
           </div>
       </main>
 
@@ -173,6 +181,7 @@
           </div>
       </div>
       <span class="custompaars copyright">&copy; NetworkIT</span>
+      <span class="custompaars copyright">Mila Rynders G_1SNB_H_D1</span>
   </footer>
 </body>
 </html>
