@@ -13,10 +13,9 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <link rel="stylesheet" href="./css/map.css">
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="./js/map-script.js" defer></script>
+    <link rel="stylesheet" href="./css/iplocation.css">
+    <script src="./js/iplocation.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
 </head>
 
@@ -70,8 +69,24 @@
   <div class="container">
     <div class="row">
       <main class="col-md-10">
-          
-      </main>
+        <p class="fs-4 fw-bold text-center pt-2 mb-5">Het kennen van je IP-geolocatie biedt verschillende voordelen. Ten eerste kan het helpen bij het versterken van de online beveiliging, omdat het je in staat stelt om verdachte activiteiten te detecteren. Door je IP-locatie te kennen, kun je verdachte logins of toegangspogingen herkennen die afwijken van je normale locatie. Daarnaast kan het nuttig zijn voor het personaliseren van diensten, zoals lokale zoekopdrachten, advertenties en inhoud op websites. Het kan ook handig zijn voor het beheren van geografisch gebonden content of het omzeilen van regionale beperkingen. Kortom, het kennen van je IP-geolocatie biedt niet alleen inzicht in je online activiteiten, maar kan ook helpen bij het verbeteren van je online ervaring en veiligheid.</p>
+        <div class="container-fluid mb-5">
+            <form class="d-flex col-md-12 mb-2" role="search">
+                <input class="form-control me-2" id="ipInput" type="text" placeholder="Voer een IP-adres in" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary iploc-button col-md-2" type="button" id="button-addon2" onclick="getGeolocation()">Zoeken</button>
+            </form>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Kenmerk</th>
+                        <th scope="col">Waarde</th>
+                    </tr>
+                </thead>
+                <tbody id="ipLocationResults">
+                </tbody>
+            </table>
+        </div>
+    </main>
         
       <aside class="col-md-2 border-start ps-5">
         <h2 class="text-uppercase onderlijning fs-5 fw-semibold pt-3 blauw">Social media</h2>

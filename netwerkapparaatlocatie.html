@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <link rel="stylesheet" href="./css/map.css">
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script src="./js/map-script.js" defer></script>
+    <script src="./js/map2-script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
 </head>
 
@@ -94,8 +94,8 @@
                           <tbody>
                               <tr>
                                   <th scope="row">MAC-adres</th>
-                                  <td>3ffe:404:1:1000:0:0:ef0:bc00</td>
-                                  <td>2001:0::1111:2222:10:A1A1</td>
+                                  <td>3f:4:1:1:0::ef:bc</td>
+                                  <td>21:0::1:2:10:A1</td>
                               </tr>
                               <tr>
                                   <th scope="row">Type</th>
@@ -112,7 +112,11 @@
                       <li class="list-group-item"><span class="custompaars">Optimalisatie van netwerkinfrastructuur</span></li>
                   </ol>
               </section>
-          </div>
+              <section id="map" class="row">
+                <p class="fw-bold fs-4 onderlijning">Apparaat 1 bevindt zich:</p>
+                <div id="locatiemap" class="col-md-12 mb-5"></div>
+              </section>
+            </div>
       </main>
         
       <aside class="col-md-2 border-start ps-5">

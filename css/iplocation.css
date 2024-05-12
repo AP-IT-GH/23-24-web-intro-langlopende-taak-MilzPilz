@@ -1,0 +1,28 @@
+.iploc-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.iploc-input,
+.iploc-button {
+    margin: 10px;
+    padding: 5px;
+}
+
+.iploc-button {
+    cursor: pointer;
+    background-color: #8B78FF;
+    color: #fff;
+    border-color: #8B78FF;
+}
+
+.iptable {
+    border-radius: 10px;
+}
+
+.iploc-result {
+    margin-top: 20px;
+    text-align: left;
+}
